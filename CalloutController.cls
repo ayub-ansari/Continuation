@@ -1,5 +1,5 @@
 global class CalloutController{
-    
+    public static String requestLabel;
     @RemoteAction
     public static Object helpSupportAgents(String body){
       Map<String, Object> jsonPayload = new jsonPayload()
@@ -22,6 +22,7 @@ global class CalloutController{
         req.setBody(requestPayload);
         req.setHeader('content-type','application/json');
         searchContinuation.state = searchContinuation.addHttpRequest(req); 
+        requestLabel = searchContinuation.state;
         return searchContinuation;
     }
 
