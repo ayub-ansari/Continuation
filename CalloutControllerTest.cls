@@ -7,7 +7,7 @@ public class CalloutControllerTest{
     HttpResponse response = new HttpResponse();
     response.setBody(tempStr); 
     CalloutController controller = new CalloutController();
-    Test.setContinuationResponse(controller.requestLabel, response);
+    Test.setContinuationResponse(CalloutController.requestLabel, response);
     //Object searchResult = Test.invokeContinuationMethod(CalloutController.class, conti);    
     Object searchResult = Test.invokeContinuationMethod(controller, conti);
   }
