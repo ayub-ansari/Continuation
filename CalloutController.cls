@@ -14,7 +14,7 @@ global class CalloutController{
       return res.getBody();
     }
 
-    //method by auran
+    //method by ayub
     public static Continuation makeContinuation(String contMethodName, String method, String endpoint, String requestPayload){
         Continuation searchContinuation = new Continuation(120); 
         searchContinuation.continuationMethod = contMethodName;
