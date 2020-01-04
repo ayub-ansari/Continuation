@@ -13,7 +13,7 @@ global class CalloutController{
       HttpResponse res = Continuation.getResponse((String)state);
       return res.getBody();
     }
-    //method
+    //method worked by ayub
     public static Continuation makeContinuation(String contMethodName, String method, String endpoint, String requestPayload){
         Continuation searchContinuation = new Continuation(120); 
         searchContinuation.continuationMethod = contMethodName;
